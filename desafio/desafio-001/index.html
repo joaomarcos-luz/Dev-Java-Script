@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<input lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: rgb(214, 103, 121);
+            color: white;
+        }
+    </style>
+</head>
+<input>
+    <H1>Detector de Brasileiros</H1>
+    Qual o Pais que voce nasceu ?<input type="text" name="ps" id="ps"></input>
+    <input type="button" value="enter" onclick="apurar()"></input>
+    <div class="res">
+
+    </div>
+<script>
+     function apurar(){
+        var txt = document.querySelector('input#ps').value
+        var resp = document.querySelector('div.res')
+        if (txt.toLowerCase() === 'brasil') {
+            resp.innerHTML = `<p>Voce nasceu no ${txt} voce e Brasileiro</p>`
+        } else {
+            resp.innerHTML = `<p>Voce nasceu no ${txt} voce e Estrangeiro</p>`
+        }
+    }
+</script>
+</body>
+</html>

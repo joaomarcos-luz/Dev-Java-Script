@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(125, 125, 214);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    height: 100x;
+    width: 420px;
+    margin: 20px 350px;
+}
+
+div > button{
+    padding: 5px;
+    margin: 5px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+

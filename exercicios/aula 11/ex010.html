@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <H1>Verificador de velocidade</H1>
+    Velocidade do carro: <input type="number" name="txtvl" id="txtvl"> km
+    <input type="button" value="Verificador" onclick="calcular()">
+    <div id="area">
+        
+    </div>
+
+    <script>
+        function calcular(){
+            var txtv = document.getElementById('txtvl')
+            var res = document.getElementById('area')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel}</strong> km/h</p>`
+                if(vel > 70){
+                    res.innerHTML += `<p> a velocidade minima 70km/h sua velocidade ${vel}km/h voce sera multado!</p>`
+                    res.innerHTML += `<P>Dirija sempre com sinto de segurança</p>`
+                }
+        }
+    </script>
+</body>
+</html>
