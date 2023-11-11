@@ -8,7 +8,7 @@ function contar() {
         res.innerHTML = '<p>Impossivel contar!</p>'
         //window.alert('[Erro] Faltam dados!');
     } else {
-        res.innerHTML += '<p><br>Contando:</br></p>';
+        res.innerHTML = '<p><br>Contando:</br></p>';
         let i = Number(ini);
         let f = Number(fim);
         let p = Number(passo);
@@ -18,12 +18,12 @@ function contar() {
         }
         if (i < f) {
             //Contagem Crescente
-            for ( let c = i; c < f; c += p) {
+            for ( let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{1f449}`
             }
         } else {
             //Contagem Regressiva
-            for ( let c = i; c > f; c -= p) {
+            for ( let c = i; c >= f; c -= p) {
                 res.innerHTML += `${c} \u{1f449}`
             }
         }
