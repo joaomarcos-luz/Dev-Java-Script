@@ -1,0 +1,43 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(96, 96, 233);
+
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
+section{
+    width: 300px;
+    height: 255px;
+    margin: auto;
+    width: 350px;
+    padding: 10px 10px 20px 20px;
+    text-shadow: 10px rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    background-color: white;
+}
+
+#botao{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color: rgb(96, 96, 233);
+    color: white;
+}
+
+select{
+    padding: 10px;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
